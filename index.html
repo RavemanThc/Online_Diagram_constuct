@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagramm</title>
+</head>
+<body>
+
+<section>
+  <select id="chartType">
+    <option value="bar">Bar</option>
+    <option value="line">Line</option>
+    <option value="pie">Pie</option>
+    <option value="doughnut">Doughnut</option>
+    <option value="radar">Radar</option>
+    <option value="polarArea">PolarArea</option>
+  </select>
+
+  <label>
+    <input type="checkbox" id="zero" checked>
+    beginAtZero
+  </label>
+
+  <br><br>
+
+  <input id="labelInput" placeholder="Label">
+  <input id="valueInput" type="number" placeholder="Value (optional)">
+  <input id="colorInput" type="color" value="#4CAF50">
+  <button id="addBtn">Add</button>
+
+  <ul id="items"></ul>
+
+  <canvas id="myChart"></canvas>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./src/script_chart.js"></script>
+</body>
+</html>
